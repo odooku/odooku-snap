@@ -1,5 +1,5 @@
 name: odooku
-version: '10.0.0'
+version: '10.0.1'
 summary: Easily run Odoo as a service through Odooku.
 description: |
   Easily run Odoo as a service through Odooku. Odooku follows the
