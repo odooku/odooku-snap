@@ -30,6 +30,7 @@ parts:
       - zlib1g-dev
       - libfreetype6-dev
       - libwebp-dev
+      - libusb-1.0-0-dev
     plugin: python
     python-version: python2
     requirements: requirements.txt
