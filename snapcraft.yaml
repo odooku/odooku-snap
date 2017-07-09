@@ -22,6 +22,11 @@ parts:
       - libldap2-dev
       - libsasl2-dev
       - libssl-dev
+      - libtiff5-dev
+      - libjpeg8-dev
+      - zlib1g-dev
+      - libfreetype6-dev
+      - libwebp-dev
     plugin: python
     python-version: python2
     requirements: requirements.txt
