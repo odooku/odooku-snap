@@ -1,0 +1,19 @@
+name: odooku
+version: '10.0.0'
+summary: Easily run Odoo as a service through Odooku.
+description: |
+  Easily run Odoo as a service through Odooku. Odooku follows the
+  principes defined by the 'Twelve-Factor App'.
+
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: devmode # use 'strict' once you have the right plugs and slots
+
+apps:
+  odooku:
+    command: odooku
+
+parts:
+  odooku-python:
+    plugin: python
+    python-version: python2
+    requirements: requirements.txt
