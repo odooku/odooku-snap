@@ -65,6 +65,6 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
      apt-get update
-     apt-get install -y libpq-dev libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libssl-dev snapcraft
+     apt-get install -y snapcraft
   SHELL
 end
