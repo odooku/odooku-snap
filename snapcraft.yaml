@@ -11,6 +11,9 @@ confinement: strict
 apps:
   odooku:
     command: odooku
+    plugs:
+      - network-bind
+      - raw-usb
 
 parts:
   odooku-python:
