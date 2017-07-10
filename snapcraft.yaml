@@ -14,11 +14,6 @@ apps:
     plugs:
       - network-bind
       - raw-usb
-  odooku-python:
-    command: python
-    plugs:
-      - network-bind
-      - raw-usb
 
 parts:
   odooku-python:
@@ -35,6 +30,7 @@ parts:
       - zlib1g-dev
       - libfreetype6-dev
       - libwebp-dev
+    stage-packages:
       - libusb-1.0-0
     plugin: python
     python-version: python2
