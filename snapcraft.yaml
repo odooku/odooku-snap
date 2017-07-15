@@ -13,6 +13,7 @@ apps:
     command: odooku
     plugs:
       - network-bind
+      - network-manager
       - raw-usb
 
 parts:

@@ -6,4 +6,9 @@ principes defined by the 'Twelve-Factor App'.
 [![Snap Status](https://build.snapcraft.io/badge/odooku/odooku-snap.svg)](https://build.snapcraft.io/user/odooku/odooku-snap)
 
 
-## POSBox
+## PoS Service
+
+Requires two additional connections:
+
+- network-manager
+- raw-usb
