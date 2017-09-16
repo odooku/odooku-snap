@@ -1,5 +1,5 @@
 name: odooku
-version: '10.0.5'
+version: '10.0.6'
 summary: Easily run Odoo as a service through Odooku.
 description: |
   Easily run Odoo as a service through Odooku. Odooku follows the
@@ -11,9 +11,13 @@ confinement: strict
 apps:
   odooku:
     command: odooku
+  odooku-posbox:
+    command: odooku wsgi 8069 --server-wide-modules=web,hw_proxy,hw_escpos 
+    daemon: simple
+    stop-timeout: 10s
     plugs:
       - network-bind
-      - network-manager
+      - network-control
       - raw-usb
 
 parts:
