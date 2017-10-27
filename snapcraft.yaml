@@ -11,6 +11,10 @@ confinement: strict
 apps:
   odooku:
     command: odooku
+  odooku-posbox:
+    command: odooku wsgi 8069 --server-wide-modules=web,hw_proxy,hw_escpos 
+    daemon: simple
+    stop-timeout: 10s
     plugs:
       - network-bind
       - network-control
